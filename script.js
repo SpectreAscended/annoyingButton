@@ -17,18 +17,7 @@ const ranNumber = function() {
     return Math.round(Math.random() * 255);
 };
 
-const ranDeg = function() {
-    return Math.round(Math.random() * 360)
-}
-
-ranDeg();
-
-
 // Make button dart around
-
-document.addEventListener('keydown', function(e) {
-    return false;     
-})
 
 btn.addEventListener('mouseover', function(e) {
     const ranNum = (Math.random() * 300) + 100;
@@ -41,7 +30,6 @@ btn.addEventListener('mouseover', function(e) {
 
 btn.addEventListener('click', function(e) {
     e.preventDefault();
-
     btn.classList.add('hidden');
     text.classList.remove('hidden');
     setInterval(e => {
