@@ -3,6 +3,7 @@
 const btn = document.querySelector('.btn');
 const body = document.querySelector('body');
 const text = document.querySelector('h1');
+const html = document.querySelector('html')
 
 // Returns a negative character randomly to be used in our transform: translate
 
@@ -19,19 +20,31 @@ const ranNumber = function() {
 
 // Make button dart around
 
-btn.addEventListener('mouseover', function() {
-    const ranNum = (Math.random() * 300) + 100;
-    btn.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
-});
+// btn.addEventListener('mouseover', function() {
+//     const ranNum = (Math.random() * 300) + 150;
+//     btn.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
+// });
 
 // Display pleasant victory message
 
 btn.addEventListener('click', function(e) {
     e.preventDefault();
+
+    // Displays message and makes it dart around the page
+
     btn.classList.add('hidden');
     text.classList.remove('hidden');
-    setInterval(e => {
-        body.style.backgroundColor = `rgba(${ranNumber()}, ${ranNumber()}, ${ranNumber()}, 1)`;
-        text.style.transform = `translate(${posNeg()}${ranNumber()}px, ${posNeg()}${ranNumber()}px)`;
-    }, 250);    
+    setInterval(() => {      
+        body.style.backgroundColor = `rgba(${ranNumber()}, ${ranNumber()}, ${ranNumber()})`;
+        text.style.transform = `translate(${posNeg()}${ranNumber() + 50}px, ${posNeg()}${ranNumber() + 50}px)`;
+    }, 250);
+
+    // Makes (cursor) hand wave
+
+    setInterval(() => {
+        html.style.cursor = 'grabbing'
+    }, 100)
+    setInterval(() => {
+        html.style.cursor = 'grab'
+    }, 200)    
 });

@@ -1,5 +1,9 @@
+html {
+    cursor: grab;
+}
+
 body {
-    background-color: rgb(24, 102, 165);
+    background-color: #1866a5;
     display: flex;
     justify-content: center;
     margin-top: 40vh;
