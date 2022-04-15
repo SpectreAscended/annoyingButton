@@ -20,10 +20,10 @@ const ranNumber = function() {
 
 // Make button dart around
 
-// btn.addEventListener('mouseover', function() {
-//     const ranNum = (Math.random() * 300) + 150;
-//     btn.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
-// });
+btn.addEventListener('mouseover', function() {
+    const ranNum = (Math.random() * 300) + 150;
+    btn.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
+});
 
 // Display pleasant victory message
 
