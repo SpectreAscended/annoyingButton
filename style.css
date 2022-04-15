@@ -14,7 +14,7 @@ button {
     color: #eee;
     border-radius: 12px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    /* display: none; */
+    transition: transform 100ms ease-in-out;
 }
 
 h1 {
@@ -22,6 +22,8 @@ h1 {
     font-size: 10rem;
     margin-top: auto;
     text-transform: capitalize;
+    transition: transform 250ms ease-in-out;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hidden {
