@@ -12,6 +12,14 @@ const posNeg = function() {
     return posNeg > 5 ? posNeg = '' : posNeg = '-';
 };
 
+// Random number generator 0-255
+
+const ranNumber = function() {
+    return Math.round(Math.random() * 255);
+};
+
+ranNumber();
+
 // Make button dart around
 
 btn.addEventListener('mouseover', function(e) {
@@ -29,8 +37,7 @@ btn.addEventListener('click', function(e) {
     btn.classList.add('hidden');
     text.classList.remove('hidden');
     setInterval(e => {
-        let ranNum = Math.random() * 255;
-        body.style.backgroundColor = `rgba(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, 1)`;
-        text.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
+        body.style.backgroundColor = `rgba(${ranNumber()}, ${ranNumber()}, ${ranNumber()}, 1)`;
+        text.style.transform = `translate(${posNeg()}${ranNumber()}px, ${posNeg()}${ranNumber()}px)`;
     }, 250);    
 });
