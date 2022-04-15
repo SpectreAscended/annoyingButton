@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(24, 102, 165);
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+}
+
+button {
+    background-color: brown;
+    border: none;
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    color: #eee;
+    border-radius: 12px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    /* display: none; */
+}
+
+h1 {
+    color: #fff;
+    font-size: 10rem;
+    margin-top: auto;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
