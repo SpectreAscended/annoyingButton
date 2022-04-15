@@ -1,7 +1,6 @@
 "use strict"
 
 const btn = document.querySelector('.btn');
-const button = document.querySelector('button');
 const body = document.querySelector('body');
 const text = document.querySelector('h1');
 
