@@ -19,10 +19,8 @@ const ranNumber = function() {
 
 // Make button dart around
 
-btn.addEventListener('mouseover', function(e) {
+btn.addEventListener('mouseover', function() {
     const ranNum = (Math.random() * 300) + 100;
-    console.log(ranNum);
-    console.log('hey');
     btn.style.transform = `translate(${posNeg()}${ranNum}px, ${posNeg()}${ranNum}px)`;
 });
 
