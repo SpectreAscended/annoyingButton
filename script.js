@@ -8,8 +8,8 @@ const html = document.querySelector('html')
 // Returns a negative character randomly to be used in our transform: translate
 
 const posNeg = function() {
-    let posNeg = Math.random() * 10;
-    return posNeg > 5 ? posNeg = '' : posNeg = '-';
+    let output = Math.random() * 10;
+    return output > 5 ? output = '' : output = '-';
 };
 
 // Random number generator 0-255
@@ -46,5 +46,12 @@ btn.addEventListener('click', function(e) {
     }, 100)
     setInterval(() => {
         html.style.cursor = 'grab'
-    }, 200)    
+    }, 200)
+    
+    // setInterval(() => {
+    //     text.classList.toggle('spin')
+    // }, 2000);
+
+
+
 });
